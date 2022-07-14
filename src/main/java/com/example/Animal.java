@@ -10,6 +10,8 @@ public class Animal {
                 return List.of(AnimalHelper.GRASS, AnimalHelper.VARIOUS_PLANTS);
             case AnimalHelper.GRASS:
                 return List.of(AnimalHelper.ANIMALS, AnimalHelper.BIRDS, AnimalHelper.FISH);
+            case AnimalHelper.PREDATOR:
+                return List.of(AnimalHelper.ANIMALS);
             default:
                 throw new Exception(AnimalHelper.ANIMAL_NOT_FOUND_ERROR_MESSAGE);
         }

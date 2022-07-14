@@ -33,7 +33,7 @@ public class FelineTest {
 
     @Test
     public void eatMeatReturnsCorrectValue() throws Exception {
-        List<String> expectedEatMeat = List.of(AnimalHelper.ANIMALS, AnimalHelper.BIRDS, AnimalHelper.FISH);
+        List<String> expectedEatMeat = List.of(AnimalHelper.ANIMALS);
         List<String> actualEatMeat = feline.eatMeat();
         assertEquals(expectedEatMeat, actualEatMeat);
     }
